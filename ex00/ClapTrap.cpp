@@ -90,6 +90,7 @@ void ClapTrap::takeDamage(unsigned int amount){
 
 void ClapTrap::beRepaired(unsigned int amount){
 	const unsigned int maxValue = std::numeric_limits<unsigned int>::max();
+
 	if(_hitPoints == 0){
 		std::cout << "ClapTrap " << _name
 				  << " cannot repair because it has no hit points"
